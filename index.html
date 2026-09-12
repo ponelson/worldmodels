@@ -421,7 +421,7 @@ td:first-child{font-weight:800;color:#111}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow">Spatial intelligence &nbsp;/&nbsp; physical AI &nbsp;/&nbsp; verified July 2026</div>
+        <div class="eyebrow">Spatial intelligence &nbsp;/&nbsp; physical AI &nbsp;/&nbsp; verified September 2026</div>
         <h1 class="h1">The machines that learn <em>how the world works</em>.</h1>
         <p class="lede">A world model is an AI system that builds an internal picture of a physical, three-dimensional environment: it predicts how a scene evolves and how your actions change it. Where a language model predicts the next word, a world model predicts the next moment. This is a field guide to what they are, who is building them, and the hardware it takes to run them.</p>
         <div class="hero-actions">
@@ -558,13 +558,13 @@ td:first-child{font-weight:800;color:#111}
     <div class="cards" style="margin-top:16px">
       <article class="card">
         <div class="meta"><span class="tag blue">Spatial intelligence</span><span class="tag">Startup</span></div>
-        <h3>World Labs &middot; Marble</h3>
-        <p>Fei-Fei Li's venture, co-founded with Justin Johnson, on the thesis that reasoning in 3D is the next capability gap. Marble turns text, photos, video, panoramas, or rough layouts into persistent, editable 3D worlds.</p>
+        <h3>World Labs &middot; Marble &amp; Atlas</h3>
+        <p>Fei-Fei Li's venture, co-founded with Justin Johnson, on the thesis that reasoning in 3D is the next capability gap. Marble turns text, photos, video, panoramas, or rough layouts into persistent, editable 3D worlds. In September 2026 it added Atlas, an "omni" model that builds a detailed, camera-controllable 3D scene from a single image.</p>
         <dl>
           <dt>Raised</dt><dd>~$1.23B total; $1B in Feb 2026</dd>
           <dt>Backers</dt><dd>NVIDIA, AMD, Autodesk ($200M), a16z, Fidelity, Sea</dd>
         </dl>
-        <div class="source-links"><a href="https://www.worldlabs.ai/blog/funding-2026" target="_blank" rel="noopener">worldlabs.ai</a><a href="https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-202957884.html" target="_blank" rel="noopener">Reuters</a></div>
+        <div class="source-links"><a href="https://www.worldlabs.ai/blog/funding-2026" target="_blank" rel="noopener">worldlabs.ai</a><a href="https://siliconangle.com/2026/09/01/fei-fei-lis-world-labs-debuts-atlas-a-world-model-showcase-for-advanced-spatial-intelligence/" target="_blank" rel="noopener">Atlas · Sept 2026</a></div>
       </article>
       <article class="card">
         <div class="meta"><span class="tag purple">JEPA / planning</span><span class="tag">Startup</span></div>
@@ -579,7 +579,7 @@ td:first-child{font-weight:800;color:#111}
       <article class="card">
         <div class="meta"><span class="tag green">Real-time video</span><span class="tag">Startup</span></div>
         <h3>Decart &middot; Oasis / Mirage / Lucy</h3>
-        <p>Tel Aviv lab founded by Dean Leitersdorf and Moshe Shalev, both Unit 8200 veterans. Oasis was the first real-time interactive generative video model; the company also licenses a GPU optimization stack (DOS) and says it has been profitable almost from day one.</p>
+        <p>Tel Aviv lab founded by Dean Leitersdorf and Moshe Shalev, both Unit 8200 veterans. Oasis was the first real-time interactive generative video model; Oasis 3 (June 2026) pivoted toward physical AI, selling photorealistic multi-camera driving environments via API to autonomous-vehicle developers. The company also licenses a GPU optimization stack (DOS).</p>
         <dl>
           <dt>Raised</dt><dd>~$450M+; $300M at ~$4B (May 2026)</dd>
           <dt>Backers</dt><dd>Radical Ventures, NVIDIA, Amazon, Sequoia</dd>
@@ -599,10 +599,10 @@ td:first-child{font-weight:800;color:#111}
       <article class="card">
         <div class="meta"><span class="tag blue">Real-time worlds</span><span class="tag">Alphabet</span></div>
         <h3>Google DeepMind &middot; Genie 3</h3>
-        <p>The first real-time, interactive, general-purpose world model: type a prompt and walk through the result at 720p and about 24 fps, with multi-minute consistency. It is grounded partly in Street View data. Now surfaced to users through the Project Genie demo.</p>
+        <p>The first real-time, interactive, general-purpose world model: type a prompt and walk through the result at 720p and about 24 fps, with multi-minute consistency. It is grounded partly in Street View data. Now shipping to users via Project Genie, a paid consumer product for Google AI Ultra subscribers that pairs Genie 3 with the Nano Banana Pro image model and Gemini.</p>
         <dl>
           <dt>Funding</dt><dd>Internal to Alphabet</dd>
-          <dt>Status</dt><dd>Research preview; consumer demo</dd>
+          <dt>Status</dt><dd>Model in research preview; Project Genie live for Ultra subs</dd>
         </dl>
         <div class="source-links"><a href="https://deepmind.google/models/genie/" target="_blank" rel="noopener">deepmind.google</a><a href="https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/" target="_blank" rel="noopener">announcement</a></div>
       </article>
@@ -616,6 +616,18 @@ td:first-child{font-weight:800;color:#111}
         </dl>
         <div class="source-links"><a href="https://www.cnbc.com/2026/06/11/project-prometheus-bezos-bajaj-live-updates.html" target="_blank" rel="noopener">CNBC</a><a href="https://en.wikipedia.org/wiki/Prometheus_(company)" target="_blank" rel="noopener">overview</a></div>
       </article>
+    </div>
+
+    <h3 style="font-family:var(--serif);font-size:32px;letter-spacing:-.04em;margin:40px 0 6px">The necessary roles</h3>
+    <p class="sub" style="margin-bottom:18px">A more honest cut than funding bars: the structural roles you cannot route around to build this landscape. Lose any one and it does not stand up. Names within a role are swappable; the roles are not.</p>
+    <div class="cards">
+      <article class="card"><div class="meta"><span class="tag orange">Compute &amp; platform</span></div><h3>NVIDIA</h3><p>The chokepoint, and not close. Training compute, the open world-model platform (Cosmos), the robot foundation model (GR00T), the simulator (Isaac), and the edge chip (Jetson Thor). Everyone else here runs on it.</p></article>
+      <article class="card"><div class="meta"><span class="tag blue">Interactive frontier</span></div><h3>Google DeepMind</h3><p>Sets the real-time-world bar (Genie 3), owns the learning-by-imagining spine (Dreamer, MuZero), and is the one credible non-NVIDIA training path (TPU / JAX). Frontier-setter and monopoly hedge at once.</p></article>
+      <article class="card"><div class="meta"><span class="tag purple">Latent counter-thesis</span></div><h3>Meta / AMI Labs</h3><p>The predict-don't-render camp (V-JEPA, LeCun). Necessary precisely because it disagrees with everyone else; without it the field is just prettier video with no theory of understanding underneath.</p></article>
+      <article class="card"><div class="meta"><span class="tag green">Persistent 3D</span></div><h3>World Labs</h3><p>Memory-as-geometry: build a navigable 3D scene that survives revisiting rather than a re-hallucinated frame. The most credible bet that a world should be reconstructed, not just generated.</p></article>
+      <article class="card"><div class="meta"><span class="tag red">Open ecosystem</span></div><h3>Tencent · Alibaba · Ant</h3><p>Where open world models actually ship, and the price-and-access floor. Alibaba's Wan is the base others build on. The reason this is not a closed handful of US labs.</p></article>
+      <article class="card"><div class="meta"><span class="tag">Embodiment</span></div><h3>Physical Intelligence</h3><p>Where world models cash out into physical value. One cross-platform robot brain (&pi;0), so its market is every humanoid that ships. A model with no body is a demo; deployment closes the loop.</p></article>
+      <article class="card"><div class="meta"><span class="tag">Unfilled &middot; up for grabs</span></div><h3>The world-state foundation</h3><p>The durable, queryable store the whole memory-and-sharing argument requires. Today split awkwardly across parallel file systems, scale-out data platforms, and scene formats like OpenUSD, with no dominant owner. Least glamorous, most load-bearing.</p></article>
     </div>
   </div>
 </section>
@@ -918,6 +930,56 @@ td:first-child{font-weight:800;color:#111}
       </div>
     </div>
     <div class="note">Architecture note: the Transformer, state space models such as Mamba, and the JEPA and Dreamer world-model families are established, widely documented designs rather than 2026 news, so this section describes mechanics rather than fresh claims.</div>
+
+    <h3 style="font-family:var(--serif);font-size:34px;letter-spacing:-.045em;margin:38px 0 6px">How a world remembers itself</h3>
+    <p class="mini" style="margin:0 0 16px;font-size:15px;color:#4c5260">The hardest unsolved piece, and the one you feel first: turn away, turn back, and a naive generator has quietly repainted the room.</p>
+    <div class="split">
+      <div class="panel">
+        <h3>Two ways to persist</h3>
+        <p>A world remembers itself only when its state is pulled out of the model's context window into something addressable. Two families do this. <b>Explicit reconstruction</b> builds the generated world into an actual 3D representation and renders views from it, so the geometry is the memory. PERSIST tracks space all around the player, not just what is in view, and World Labs and HY-World take this route. Reliable, but rigid once built.</p>
+        <p style="margin-top:12px"><b>External memory banks</b> keep stored frames tagged with pose and timestamp and retrieve the relevant ones on return. WorldMem reconstructs previously seen scenes even after large viewpoint or time gaps, and timestamps let the world change while still being remembered. Flexible, but can still drift.</p>
+      </div>
+      <div class="panel">
+        <h3>Why it is so hard</h3>
+        <p>Memory and generation pull against each other. A generative model is trained to be smooth and plausible, to fill in what fits; memory demands the opposite, exact and faithful retrieval. The very capability that lets it invent a convincing next frame is what lets it overwrite what was actually there. Its creativity is its amnesia.</p>
+        <p style="margin-top:12px">Underneath sit two more walls. Weights freeze at inference, so there is no native way to write a new experience without catastrophic forgetting. And holding a growing world-state and retrieving from it in real time is a bandwidth-and-storage problem, not a compute one.</p>
+      </div>
+    </div>
+    <div class="note">The pattern the field is converging on: split the world model into a persistent, addressable world store and a generator that reads from and writes to it. That is robotics SLAM by another name, and the open part is writing new observations back in consistently.</div>
+
+    <h3 style="font-family:var(--serif);font-size:34px;letter-spacing:-.045em;margin:34px 0 6px">Shared realities</h3>
+    <p class="mini" style="margin:0 0 16px;font-size:15px;color:#4c5260">If every agent hallucinates its own world, no two agree on where the door is. Shared reality needs one canonical state that many minds sync to.</p>
+    <div class="split">
+      <div class="panel">
+        <h3>The emerging mechanism</h3>
+        <p>The first real attempts share memory rather than models. In ShareVerse, each agent archives its frames with physical coordinates, and when generating, retrieves other agents' memories of the places along its own path, so two agents conditioned on the same place render the same world, with cross-agent attention resolving conflicts. Xiaomi's driving model does the single-model version: one reconstructed 4D scene acts as shared spatial memory across every camera view.</p>
+      </div>
+      <div class="panel">
+        <h3>The mature analogs, and the open part</h3>
+        <p>The shape is already solved next door: authoritative game servers (one canonical simulation, many client views), CRDTs for mergeable state (what makes collaborative editing consistent), OpenUSD as a scene description many tools agree on, and collaborative SLAM where robots merge maps. The unsolved part is the merge: when two agents' memories of a place disagree, whose wins. That is a single-source-of-truth and no-copy-consistency problem.</p>
+      </div>
+    </div>
+
+    <h3 style="font-family:var(--serif);font-size:34px;letter-spacing:-.045em;margin:34px 0 6px">The overlay: thinking and dreaming</h3>
+    <p class="mini" style="margin:0 0 16px;font-size:15px;color:#4c5260">The anticipated architecture layers a reasoner over the world model. Worth separating the two words.</p>
+    <div class="cards">
+      <article class="card">
+        <div class="meta"><span class="tag green">Dreaming</span></div>
+        <h3>Rolling the world forward</h3>
+        <p>Imagining consequences by rolling the world model forward in latent space. Dreamer learns behaviors by latent imagination, and DayDreamer put that imagination onto physical robots. No language required.</p>
+      </article>
+      <article class="card">
+        <div class="meta"><span class="tag blue">Thinking</span></div>
+        <h3>Searching over dreams</h3>
+        <p>Deliberation: proposing and evaluating futures. Reasoning-via-Planning and Tree-of-Thought use an LLM as its own world model, dreaming outcomes in language and searching them; planner/world-model separation splits the two into distinct parts.</p>
+      </article>
+      <article class="card">
+        <div class="meta"><span class="tag purple">Fusion</span></div>
+        <h3>The clean version</h3>
+        <p>LeCun's H-JEPA blueprint: a reasoning module that thinks by optimizing over a latent world model's predictions rather than generating tokens. System-2 deliberation as search over dreams.</p>
+      </article>
+    </div>
+    <div class="fieldnote"><b>Why these three are one problem:</b> thinking is only as good as the world it imagines with; that world is useful only if it remembers itself; and for many minds, that memory has to be shared. The convergent system is three organs, a persistent world store, a generator that dreams against it, and a reasoner that thinks by searching those dreams. Nobody has assembled all three cleanly, which is where the next moat forms.</div>
   </div>
 </section>
 
@@ -1149,7 +1211,7 @@ td:first-child{font-weight:800;color:#111}
   <div class="wrap">
     <div class="kicker">16 &nbsp;/&nbsp; Provenance</div>
     <h2>Sources &amp; accuracy notes.</h2>
-    <p class="sub">Every present-day figure here was checked against the web on 24 July 2026. Funding and valuation numbers are reported figures, not audited, and some rounds were described as "reported" or "finalizing" at the time of writing. Where a fact could not be confirmed, the page says so rather than guessing.</p>
+    <p class="sub">Headline figures here were re-audited against the web on 11 September 2026, and the deeper body was spot-checked in the same pass. Funding and valuation numbers are reported figures, not audited, and some rounds were described as "reported" or "finalizing" at the time of writing. Where a fact could not be confirmed, the page says so rather than guessing.</p>
     <div class="sources-grid">
       <a href="https://www.worldlabs.ai/blog/funding-2026" target="_blank" rel="noopener"><b>World Labs</b>$1B funding announcement, Feb 2026</a>
       <a href="https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-202957884.html" target="_blank" rel="noopener"><b>Reuters</b>World Labs raises $1 billion</a>
@@ -1184,7 +1246,7 @@ td:first-child{font-weight:800;color:#111}
 
 <footer class="footer">
   <div class="wrap">
-    World Models &middot; an interactive field guide. Built as a single self-contained page, publishable on GitHub Pages. Facts verified 24 July 2026; this is a fast-moving field, so treat figures as of that date. Fonts: Source Serif 4, Inter, JetBrains Mono.
+    World Models &middot; an interactive field guide. Built as a single self-contained page, publishable on GitHub Pages. Facts last audited 11 September 2026; this is a fast-moving field, so treat figures as of that date. Fonts: Source Serif 4, Inter, JetBrains Mono.
   </div>
 </footer>
 
@@ -1482,7 +1544,7 @@ const families = [
     letter:"J", color:"var(--orange)", key:"jepa",
     title:"Non-generative JEPA planners",
     sub:"predict in abstract space, never render a pixel",
-    body:"The contrarian camp, led by Yann LeCun. Instead of generating the future, these learn to predict an abstract representation of it, ignoring unpredictable surface detail. The claim is that this yields real physical common sense and planning at a fraction of the compute, because the model never wastes effort drawing pixels it does not need.",
+    body:"The contrarian camp, led by Yann LeCun. Instead of generating the future, these learn to predict an abstract representation of it, ignoring unpredictable surface detail. The claim is that this yields real physical common sense and planning at a fraction of the compute, because the model never wastes effort drawing pixels it does not need. This is the sharp line inside the latent family: Dreamer keeps a decoder and reconstructs images while training, so it can draw; JEPA drops reconstruction entirely, so there is genuinely nothing to watch. Its output feeds planning and control, not a screen.",
     kv:[["Flagship","AMI Labs · V-JEPA line (LeCun)"],["Output","latent predictions, plans, control (no visuals)"],["Method","Joint Embedding Predictive Architecture in latent space"],["Uses","robot planning, industrial sensor modeling, healthcare"]]
   }
 ];
