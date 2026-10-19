@@ -3,7 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>World Models</title>
+<title>World Models v2.0 — an interactive field guide</title>
+<meta name="description" content="A field guide to world models: what they are, who builds them, the open ecosystem, how they are evaluated, and the hardware underneath. Re-audited October 2026." />
+<meta property="og:title" content="World Models v2.0" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700;8..60,900&display=swap" rel="stylesheet">
@@ -375,6 +377,9 @@ td:first-child{font-weight:800;color:#111}
   .src-row .ss { font-family:var(--mono); font-size:11px; color:var(--text-dim); margin-top:3px; letter-spacing:.02em; }
 
 
+.eyebrow b{color:var(--ink);font-weight:700}
+.brand .vtag{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.02em;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 7px;margin-left:8px;vertical-align:middle}
+.verstamp{font-family:var(--mono);font-size:11.5px;line-height:1.6;color:var(--muted);margin:14px 0 0;max-width:120ch}
 </style>
 </head>
 <body>
@@ -394,7 +399,7 @@ td:first-child{font-weight:800;color:#111}
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="brand"><span>World</span> Models</div>
+    <div class="brand"><span>World</span> Models<span class="vtag">v2.0</span></div>
     <div class="navlinks" id="navlinks">
       <a href="#what" data-target="what">What</a>
       <a href="#anatomy" data-target="anatomy">Anatomy</a>
@@ -421,7 +426,7 @@ td:first-child{font-weight:800;color:#111}
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <div class="eyebrow">Spatial intelligence &nbsp;/&nbsp; physical AI &nbsp;/&nbsp; verified September 2026</div>
+        <div class="eyebrow">Spatial intelligence &nbsp;/&nbsp; physical AI &nbsp;/&nbsp; <b>v2.0</b> · 19 October 2026, 12:31 AM ET · build 2026-10-19T00:31-04:00</div>
         <h1 class="h1">The machines that learn <em>how the world works</em>.</h1>
         <p class="lede">A world model is an AI system that builds an internal picture of a physical, three-dimensional environment: it predicts how a scene evolves and how your actions change it. Where a language model predicts the next word, a world model predicts the next moment. This is a field guide to what they are, who is building them, and the hardware it takes to run them.</p>
         <div class="hero-actions">
@@ -431,7 +436,7 @@ td:first-child{font-weight:800;color:#111}
         <div class="stats">
           <div class="stat"><div class="n">$3B+</div><div class="t">Venture capital into world-model startups in the first half of 2026</div></div>
           <div class="stat"><div class="n">24<span style="font-size:20px;font-weight:700"> fps</span></div><div class="t">Real-time interactive generation at 720p (DeepMind Genie 3)</div></div>
-          <div class="stat"><div class="n">$1B+</div><div class="t">Single rounds raised by both World Labs and AMI Labs</div></div>
+          <div class="stat"><div class="n">$8.2B</div><div class="t">AMD's agreed all-stock price for World Labs (announced Sep 2026; close pending)</div></div>
           <div class="stat"><div class="n">72</div><div class="t">Blackwell GPUs fused as one accelerator in a GB200 NVL72 rack</div></div>
         </div>
       </div>
@@ -475,7 +480,7 @@ td:first-child{font-weight:800;color:#111}
         </ul>
       </div>
     </div>
-    <div class="note">Why now: the paradigm moved into the mainstream in late 2025 and early 2026. The bet driving the capital is that as text models commoditize, the next defensible frontier is AI that understands the physical world, and that this understanding is the missing piece for robotics and autonomy.</div>
+    <div class="note">Why now: the paradigm moved into the mainstream in late 2025 and early 2026. The bet driving the capital is that as text models commoditize, the next defensible frontier is AI that understands the physical world, and that this understanding is the missing piece for robotics and autonomy. By autumn 2026 the money had moved from venture rounds to takeovers: AMD agreed to buy World Labs, and Amazon was reported in talks for Decart.</div>
   </div>
 </section>
 
@@ -512,10 +517,10 @@ td:first-child{font-weight:800;color:#111}
     <p class="sub">Builders, not backers. The table below lists labs shipping world models and the capital behind them; the bar shows total reported funding, scaled so a full bar is roughly $1.3B. Search it, filter by type, or click a column to sort. One entry, Prometheus, is included and flagged because people look for it, but it is adjacent, not a world model in the spatial sense.</p>
 
     <div class="stats">
-      <div class="stat"><div class="n">~$5.4B</div><div class="t">Reported post-money valuation, World Labs (Feb 2026)</div></div>
-      <div class="stat"><div class="n">$1.03B</div><div class="t">AMI Labs seed, reportedly Europe's largest ever (Mar 2026)</div></div>
-      <div class="stat"><div class="n">~$4B</div><div class="t">Decart valuation after its $300M round (May 2026)</div></div>
-      <div class="stat"><div class="n">2</div><div class="t">of the largest players, Cosmos and Genie, are not startups at all</div></div>
+      <div class="stat"><div class="n">$8.2B</div><div class="t">AMD's all-stock agreement for World Labs, announced 28 Sep 2026; expected to close by year-end</div></div>
+      <div class="stat"><div class="n">~$7B</div><div class="t">Reported price in Amazon's talks for Decart (WSJ, Oct 2026); no deal announced</div></div>
+      <div class="stat"><div class="n">$6.2B</div><div class="t">General Intuition valuation on a $220M round (Sep 2026), up from $2.3B in June</div></div>
+      <div class="stat"><div class="n">$1.03B</div><div class="t">AMI Labs seed at $3.5B pre-money (Mar 2026), reportedly Europe's largest seed</div></div>
     </div>
 
     <div class="toolbar">
@@ -524,6 +529,7 @@ td:first-child{font-weight:800;color:#111}
         <option value="">All types</option>
         <option value="startup">Startup</option>
         <option value="platform">Big-tech platform</option>
+        <option value="pending">Acquisition pending</option>
         <option value="adjacent">Adjacent / physical AI</option>
       </select>
       <select class="select" id="tblSort">
@@ -552,83 +558,106 @@ td:first-child{font-weight:800;color:#111}
         </table>
       </div>
     </div>
-    <div class="note">Valuations and totals are reported figures from press coverage and company statements, not audited numbers, and several rounds were still described as "reported" or "finalizing" when verified. General Intuition's founders were not disclosed in the sources checked, so that cell is left blank rather than guessed.</div>
+    <div class="note">Valuations and totals are reported figures from press coverage and company statements, not audited numbers. Acquisition prices are announced or reported deal values, not funding raised. General Intuition's total is the sum of its three disclosed rounds; Runway's total is a press estimate. Odyssey is new to the table in v2.0.</div>
 
     <h3 style="font-family:var(--serif);font-size:32px;letter-spacing:-.04em;margin:34px 0 6px">A closer look at the front-runners</h3>
     <div class="cards" style="margin-top:16px">
       <article class="card">
-        <div class="meta"><span class="tag blue">Spatial intelligence</span><span class="tag">Startup</span></div>
+        <div class="meta"><span class="tag blue">Spatial intelligence</span><span class="tag">AMD deal pending</span></div>
         <h3>World Labs &middot; Marble &amp; Atlas</h3>
-        <p>Fei-Fei Li's venture, co-founded with Justin Johnson, on the thesis that reasoning in 3D is the next capability gap. Marble turns text, photos, video, panoramas, or rough layouts into persistent, editable 3D worlds. In September 2026 it added Atlas, an "omni" model that builds a detailed, camera-controllable 3D scene from a single image.</p>
+        <p>Fei-Fei Li's lab, co-founded with Justin Johnson, Ben Mildenhall and Christoph Lassner, on the thesis that reasoning in 3D is the next capability gap. Marble turns text, photos, video, panoramas, or rough layouts into persistent, editable 3D worlds; Atlas (September 2026) builds a camera-controllable 3D scene from a single image. On 28 September 2026 AMD agreed to acquire the company in an all-stock deal valued at about $8.2B. On close, Li becomes AMD's chief scientist reporting to Lisa Su, and AMD says the team's research will help shape its hardware and systems roadmaps.</p>
         <dl>
           <dt>Raised</dt><dd>~$1.23B total; $1B in Feb 2026</dd>
+          <dt>Deal</dt><dd>AMD, ~$8.2B all-stock; close expected by end of 2026, subject to approvals</dd>
           <dt>Backers</dt><dd>NVIDIA, AMD, Autodesk ($200M), a16z, Fidelity, Sea</dd>
         </dl>
-        <div class="source-links"><a href="https://www.worldlabs.ai/blog/funding-2026" target="_blank" rel="noopener">worldlabs.ai</a><a href="https://siliconangle.com/2026/09/01/fei-fei-lis-world-labs-debuts-atlas-a-world-model-showcase-for-advanced-spatial-intelligence/" target="_blank" rel="noopener">Atlas · Sept 2026</a></div>
+        <div class="source-links"><a href="https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute" target="_blank" rel="noopener">AMD release · Sep 2026</a><a href="https://www.worldlabs.ai/blog/funding-2026" target="_blank" rel="noopener">worldlabs.ai</a><a href="https://siliconangle.com/2026/09/01/fei-fei-lis-world-labs-debuts-atlas-a-world-model-showcase-for-advanced-spatial-intelligence/" target="_blank" rel="noopener">Atlas · Sept 2026</a></div>
       </article>
       <article class="card">
         <div class="meta"><span class="tag purple">JEPA / planning</span><span class="tag">Startup</span></div>
         <h3>AMI Labs</h3>
-        <p>Advanced Machine Intelligence, founded by Yann LeCun after leaving Meta in late 2025. Pursues physics-aware, JEPA-style world models for robotics and autonomous machines, predicting in a learned representation rather than in pixels.</p>
+        <p>Advanced Machine Intelligence, founded by Yann LeCun after leaving Meta in late 2025. LeCun is executive chairman and Alexandre LeBrun is CEO, with Saining Xie as chief science officer and Michael Rabbat as VP of world models. It pursues JEPA-style world models that predict in a learned representation rather than in pixels, aimed at robotics, industry, and healthcare. No public model or API as of this audit; LeCun reportedly told the BBC in July that the company would spend the rest of 2026 refining its model, with industrial use hoped for in 2027.</p>
         <dl>
-          <dt>Raised</dt><dd>~$1.03B seed at ~$3.5B (Mar 2026)</dd>
-          <dt>Backers</dt><dd>NVIDIA, Bezos Expeditions, Toyota Ventures, Samsung</dd>
+          <dt>Raised</dt><dd>~$1.03B seed at ~$3.5B pre-money (Mar 2026)</dd>
+          <dt>Backers</dt><dd>Co-leads Cathay Innovation, Greycroft, Hiro Capital, HV Capital, Bezos Expeditions; also NVIDIA, Toyota Ventures, Samsung</dd>
         </dl>
-        <div class="source-links"><a href="https://introl.com/blog/world-models-race-agi-2026" target="_blank" rel="noopener">Introl</a><a href="https://letsdatascience.com/news/researchers-and-startups-shift-toward-world-models-5a793fd1" target="_blank" rel="noopener">coverage</a></div>
+        <div class="source-links"><a href="https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/" target="_blank" rel="noopener">TechCrunch</a><a href="https://siliconangle.com/2026/03/10/yann-lecuns-new-startup-ami-labs-raises-1-03b-train-world-models/" target="_blank" rel="noopener">SiliconANGLE</a></div>
       </article>
       <article class="card">
         <div class="meta"><span class="tag green">Real-time video</span><span class="tag">Startup</span></div>
         <h3>Decart &middot; Oasis / Mirage / Lucy</h3>
-        <p>Tel Aviv lab founded by Dean Leitersdorf and Moshe Shalev, both Unit 8200 veterans. Oasis was the first real-time interactive generative video model; Oasis 3 (June 2026) pivoted toward physical AI, selling photorealistic multi-camera driving environments via API to autonomous-vehicle developers. The company also licenses a GPU optimization stack (DOS).</p>
+        <p>Tel Aviv lab co-founded by Dean Leitersdorf and Moshe Shalev, both Unit 8200 veterans. Oasis was the first real-time interactive generative video model; Oasis 3 (June 2026) pivoted toward physical AI, selling photorealistic multi-camera driving environments via API to autonomous-vehicle developers. The company also licenses a GPU optimization stack (DOS), and coverage of the takeover interest has focused on that stack as much as on the world models. Anthropic explored a deal reported at about $6B and walked away after diligence in September 2026 (Bloomberg); in October the Wall Street Journal reported Amazon in talks at about $7B.</p>
         <dl>
           <dt>Raised</dt><dd>~$450M+; $300M at ~$4B (May 2026)</dd>
+          <dt>Status</dt><dd>Amazon talks reported (~$7B, Oct 2026); nothing announced</dd>
           <dt>Backers</dt><dd>Radical Ventures, NVIDIA, Amazon, Sequoia</dd>
         </dl>
-        <div class="source-links"><a href="https://siliconangle.com/2026/05/18/decart-raises-300m-ai-optimization-software-world-models/" target="_blank" rel="noopener">SiliconANGLE</a><a href="https://neuronfeed.com/startups/decart" target="_blank" rel="noopener">profile</a></div>
+        <div class="source-links"><a href="https://siliconangle.com/2026/05/18/decart-raises-300m-ai-optimization-software-world-models/" target="_blank" rel="noopener">SiliconANGLE</a><a href="https://letsdatascience.com/news/amazon-in-talks-to-acquire-decart-for-around-7-billion-e3e3c9e2" target="_blank" rel="noopener">Amazon talks · Oct 2026</a><a href="https://www.nst.com.my/amp/business/corporate/2026/09/1528084/anthropic-drops-pursuit-ai-startup-decart" target="_blank" rel="noopener">Reuters · Sep 2026</a></div>
       </article>
       <article class="card">
         <div class="meta"><span class="tag orange">Open platform</span><span class="tag">NVIDIA</span></div>
         <h3>NVIDIA Cosmos</h3>
-        <p>Not a startup but the most widely adopted platform: open-weight world foundation models plus a data pipeline for physical AI. Cosmos 3 (May 2026) is a mixture-of-transformers omni-model. A Cosmos Coalition includes Runway, Skild AI, Black Forest Labs and others.</p>
+        <p>Not a startup but the most widely adopted platform: world foundation models plus a data pipeline for physical AI. Cosmos 3 is a mixture-of-transformers omni-model in three sizes: Super (64B) and Nano (16B) launched at GTC Taipei on 31 May 2026, and Edge (4B) followed on 20 July, built to run robot control on Jetson-class hardware. A Cosmos Coalition includes Runway, Skild AI, Black Forest Labs and others.</p>
         <dl>
-          <dt>Model</dt><dd>Open-weight, permissive license</dd>
+          <dt>License</dt><dd>Cosmos 3 code, weights and data under OpenMDW-1.1 (permissive; OSI review pending)</dd>
           <dt>Adopters</dt><dd>1X, Figure AI, Agility, Uber, Waabi, XPENG</dd>
         </dl>
-        <div class="source-links"><a href="https://www.nvidia.com/en-us/ai/cosmos/" target="_blank" rel="noopener">nvidia.com</a><a href="https://arxiv.org/abs/2501.03575" target="_blank" rel="noopener">arXiv paper</a></div>
+        <div class="source-links"><a href="https://www.nvidia.com/en-us/ai/cosmos/" target="_blank" rel="noopener">nvidia.com</a><a href="https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf" target="_blank" rel="noopener">Cosmos 3 report</a><a href="https://huggingface.co/nvidia/Cosmos3-Edge" target="_blank" rel="noopener">Edge · HF</a></div>
       </article>
       <article class="card">
         <div class="meta"><span class="tag blue">Real-time worlds</span><span class="tag">Alphabet</span></div>
         <h3>Google DeepMind &middot; Genie 3</h3>
-        <p>The first real-time, interactive, general-purpose world model: type a prompt and walk through the result at 720p and about 24 fps, with multi-minute consistency. It is grounded partly in Street View data. Now shipping to users via Project Genie, a paid consumer product for Google AI Ultra subscribers that pairs Genie 3 with the Nano Banana Pro image model and Gemini.</p>
+        <p>The first real-time, interactive, general-purpose world model: type a prompt and walk through the result at 720p and about 24 fps, with multi-minute consistency. Project Genie, the prototype that pairs Genie 3 with the Nano Banana Pro image model and Gemini, opened to US Google AI Ultra subscribers in January 2026; since May it has been rolling out to Ultra subscribers globally, with worlds that can be seeded from Street View imagery of US places. Waymo built its driving simulator, the Waymo World Model, on Genie 3.</p>
         <dl>
           <dt>Funding</dt><dd>Internal to Alphabet</dd>
-          <dt>Status</dt><dd>Model in research preview; Project Genie live for Ultra subs</dd>
+          <dt>Status</dt><dd>Model in research preview; Project Genie a Labs prototype for AI Ultra subscribers (18+)</dd>
         </dl>
-        <div class="source-links"><a href="https://deepmind.google/models/genie/" target="_blank" rel="noopener">deepmind.google</a><a href="https://deepmind.google/blog/genie-3-a-new-frontier-for-world-models/" target="_blank" rel="noopener">announcement</a></div>
+        <div class="source-links"><a href="https://deepmind.google/models/genie/" target="_blank" rel="noopener">deepmind.google</a><a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/?amp=" target="_blank" rel="noopener">Street View · May 2026</a><a href="https://arstechnica.com/google/2026/02/waymo-leverages-genie-3-to-create-a-world-model-for-self-driving-cars/" target="_blank" rel="noopener">Waymo · Feb 2026</a></div>
       </article>
       <article class="card">
         <div class="meta"><span class="tag red">Adjacent</span><span class="tag">Physical AI</span></div>
         <h3>Prometheus (Bezos)</h3>
         <p>Included because it is the "Bezos" people ask about. Co-founded and co-led by Jeff Bezos and Vik Bajaj, it builds an "artificial general engineer," a modern take on CAD for designing physical objects. Bezos has said it has "nothing to do with robotics." It is physical AI, but not a world model in the spatial-simulation sense.</p>
         <dl>
-          <dt>Raised</dt><dd>$16B+; ~$38&ndash;41B valuation (2026)</dd>
+          <dt>Raised</dt><dd>$18B+; $12B Series B at ~$41B (Jun 2026)</dd>
           <dt>Note</dt><dd>Adjacent category, flagged for honesty</dd>
         </dl>
-        <div class="source-links"><a href="https://www.cnbc.com/2026/06/11/project-prometheus-bezos-bajaj-live-updates.html" target="_blank" rel="noopener">CNBC</a><a href="https://en.wikipedia.org/wiki/Prometheus_(company)" target="_blank" rel="noopener">overview</a></div>
+        <div class="source-links"><a href="https://www.cnbc.com/2026/06/11/project-prometheus-bezos-bajaj-live-updates.html" target="_blank" rel="noopener">CNBC</a><a href="https://www.geekwire.com/2026/bezos-ai-startup-prometheus-raises-12b-at-41b-valuation-and-the-ceos-explain-what-theyre-doing/" target="_blank" rel="noopener">GeekWire · Jun 2026</a></div>
+      </article>
+      <article class="card">
+        <div class="meta"><span class="tag purple">Agents via games</span><span class="tag">Startup</span></div>
+        <h3>General Intuition</h3>
+        <p>Spun out of the game-clip platform Medal in October 2025 by Pim de Witte (CEO), Eloi Alonso, Adam Jelley and Vincent Micheli. It trains on action-labeled gameplay video, uses its world model internally as a training gym, and sells the agent rather than the world. A research demo model, MIRA, appeared in June 2026; a commercial version is in limited testing.</p>
+        <dl>
+          <dt>Raised</dt><dd>~$674M over three rounds; $220M at ~$6.2B (Sep 2026)</dd>
+          <dt>Backers</dt><dd>Khosla, General Catalyst, Valor, Point72, Atreides, Jeff Bezos</dd>
+        </dl>
+        <div class="source-links"><a href="https://techcrunch.com/2025/10/16/general-intuition-lands-134m-seed-to-teach-agents-spatial-reasoning-using-video-game-clips/" target="_blank" rel="noopener">Seed · Oct 2025</a><a href="https://app.dealroom.co/news/note/general-intuition-raises-320m-series-a-at-2-3b-valuation" target="_blank" rel="noopener">Series A · Jun 2026</a><a href="https://hedgeco.net/news/?p=92093" target="_blank" rel="noopener">$220M · Sep 2026</a></div>
+      </article>
+      <article class="card">
+        <div class="meta"><span class="tag green">General world models</span><span class="tag">Startup</span></div>
+        <h3>Odyssey</h3>
+        <p>Palo Alto lab founded in 2023 by self-driving veterans Oliver Cameron (CEO, ex-Voyage and Cruise) and Jeff Hawke (CTO, ex-Wayve), which captured its own real-world footage with backpack-mounted cameras. Its models include Odyssey-2 Max (physics accuracy), Starchild-1 (real-time multimodal) and Agora-1 (several agents in one shared simulated world). AWS is its preferred cloud, and its models are being optimized for Trainium.</p>
+        <dl>
+          <dt>Raised</dt><dd>~$337M; $310M Series B at ~$1.45B (Jun 2026)</dd>
+          <dt>Backers</dt><dd>Natural Capital (lead), Amazon, AMD Ventures, GV, EQT, In-Q-Tel</dd>
+        </dl>
+        <div class="source-links"><a href="https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/" target="_blank" rel="noopener">TechCrunch · Jun 2026</a></div>
       </article>
     </div>
 
     <h3 style="font-family:var(--serif);font-size:32px;letter-spacing:-.04em;margin:40px 0 6px">The necessary roles</h3>
     <p class="sub" style="margin-bottom:18px">A more honest cut than funding bars: the structural roles you cannot route around to build this landscape. Lose any one and it does not stand up. Names within a role are swappable; the roles are not.</p>
     <div class="cards">
-      <article class="card"><div class="meta"><span class="tag orange">Compute &amp; platform</span></div><h3>NVIDIA</h3><p>The chokepoint, and not close. Training compute, the open world-model platform (Cosmos), the robot foundation model (GR00T), the simulator (Isaac), and the edge chip (Jetson Thor). Everyone else here runs on it.</p></article>
+      <article class="card"><div class="meta"><span class="tag orange">Compute &amp; platform</span></div><h3>NVIDIA</h3><p>Still the chokepoint. Training compute, the open world-model platform (Cosmos), the robot foundation model (GR00T), the simulator (Isaac), and the robot-side computer (Jetson Thor). What changed in 2026 is that the challengers are attaching themselves to model labs: AMD is acquiring World Labs, and Amazon backs Odyssey (which is optimizing for Trainium) and is reported in talks for Decart.</p></article>
       <article class="card"><div class="meta"><span class="tag blue">Interactive frontier</span></div><h3>Google DeepMind</h3><p>Sets the real-time-world bar (Genie 3), owns the learning-by-imagining spine (Dreamer, MuZero), and is the one credible non-NVIDIA training path (TPU / JAX). Frontier-setter and monopoly hedge at once.</p></article>
       <article class="card"><div class="meta"><span class="tag purple">Latent counter-thesis</span></div><h3>Meta / AMI Labs</h3><p>The predict-don't-render camp (V-JEPA, LeCun). Necessary precisely because it disagrees with everyone else; without it the field is just prettier video with no theory of understanding underneath.</p></article>
-      <article class="card"><div class="meta"><span class="tag green">Persistent 3D</span></div><h3>World Labs</h3><p>Memory-as-geometry: build a navigable 3D scene that survives revisiting rather than a re-hallucinated frame. The most credible bet that a world should be reconstructed, not just generated.</p></article>
+      <article class="card"><div class="meta"><span class="tag green">Persistent 3D</span></div><h3>World Labs</h3><p>Memory-as-geometry: build a navigable 3D scene that survives revisiting rather than a re-hallucinated frame. The most credible bet that a world should be reconstructed, not just generated, and soon a unit of AMD if the deal closes.</p></article>
       <article class="card"><div class="meta"><span class="tag red">Open ecosystem</span></div><h3>Tencent · Alibaba · Ant</h3><p>Where open world models actually ship, and the price-and-access floor. Alibaba's Wan is the base others build on. The reason this is not a closed handful of US labs.</p></article>
-      <article class="card"><div class="meta"><span class="tag">Embodiment</span></div><h3>Physical Intelligence</h3><p>Where world models cash out into physical value. One cross-platform robot brain (&pi;0), so its market is every humanoid that ships. A model with no body is a demo; deployment closes the loop.</p></article>
-      <article class="card"><div class="meta"><span class="tag">Unfilled &middot; up for grabs</span></div><h3>The world-state foundation</h3><p>The durable, queryable store the whole memory-and-sharing argument requires. Today split awkwardly across parallel file systems, scale-out data platforms, and scene formats like OpenUSD, with no dominant owner. Least glamorous, most load-bearing.</p></article>
+      <article class="card"><div class="meta"><span class="tag">Embodiment</span></div><h3>Physical Intelligence</h3><p>Where world models cash out into physical value. One cross-platform robot brain (&pi;0, open source since Feb 2025; &pi;0.7, Apr 2026), so its market is every humanoid that ships. A model with no body is a demo; deployment closes the loop.</p></article>
+      <article class="card"><div class="meta"><span class="tag">Unfilled &middot; up for grabs</span></div><h3>The world-state foundation</h3><p>The durable, queryable store the whole memory-and-sharing argument requires. Today split awkwardly across parallel file systems, scale-out data platforms, and scene formats like OpenUSD, with no dominant owner. Least glamorous, hardest to route around.</p></article>
     </div>
+    <div class="fieldnote" style="margin-top:22px"><b>What changed since September: silicon is buying the models.</b> In one month the two best-known independent world-model labs drew takeover prices from companies whose core business is compute. AMD agreed to buy World Labs and says the team will help set its hardware and systems roadmaps. Amazon, already Odyssey's preferred cloud and a Decart investor, was reported in talks to buy Decart, whose GPU optimization stack is part of the appeal. Read together, the frontier labs are being pulled toward the chip and cloud roadmaps that will run them, and the remaining independents (AMI Labs, General Intuition, Odyssey, Runway) now raise against that backdrop. That last sentence is this guide's reading of the deal pattern, not a reported fact.</div>
   </div>
 </section>
 
@@ -678,12 +707,12 @@ td:first-child{font-weight:800;color:#111}
             </tr>
           </thead>
           <tbody>
-            <tr data-region="china"><td>HunyuanWorld 1.0 &rarr; 2.0</td><td>Tencent Hunyuan</td><td>China</td><td><span class="tag green">Open</span><div class="mini">community license</div></td><td>3D geometry</td><td class="mini" style="font-size:13px;color:#404652">HY-World 2.0 (Apr 2026) outputs meshes, Gaussian splats, point clouds; imports to Unity/Unreal/Isaac Sim; #1 on Stanford WorldScore</td></tr>
+            <tr data-region="china"><td>HunyuanWorld 1.0 &rarr; 2.0</td><td>Tencent Hunyuan</td><td>China</td><td><span class="tag green">Open</span><div class="mini">community license</div></td><td>3D geometry</td><td class="mini" style="font-size:13px;color:#404652">HY-World 2.0 (Apr 2026) outputs meshes, Gaussian splats, point clouds; imports to Unity/Unreal/Isaac Sim; Tencent reports results comparable to closed Marble (vendor claim)</td></tr>
             <tr data-region="china"><td>Hunyuan-GameCraft</td><td>Tencent Hunyuan</td><td>China</td><td><span class="tag green">Open</span></td><td>Video</td><td class="mini" style="font-size:13px;color:#404652">Keyboard-controlled game video; trained on 1M+ recordings across 100+ AAA games</td></tr>
             <tr data-region="china"><td>LingBot-World</td><td>Ant Group (Robbyant)</td><td>China</td><td><span class="tag green">Open-source</span><div class="mini">Apache 2.0</div></td><td>Video</td><td class="mini" style="font-size:13px;color:#404652">~28B params, built on Alibaba's Wan2.2, Jan 2026. "Rivals Genie 3" is its own claim</td></tr>
             <tr data-region="china"><td>Matrix-Game 1 / 2 / 3</td><td>Skywork AI</td><td>China</td><td><span class="tag green">Open-source</span></td><td>Video</td><td class="mini" style="font-size:13px;color:#404652">Game worlds; 3.0 (Mar 2026) adds long-horizon memory</td></tr>
-            <tr data-region="us"><td>V-JEPA 2</td><td>Meta FAIR</td><td>US</td><td><span class="tag green">Open</span><div class="mini">weights + code + data</div></td><td>Latents</td><td class="mini" style="font-size:13px;color:#404652">1.2B params; latent-space prediction; zero-shot robot planning; Jun 2025</td></tr>
-            <tr data-region="us"><td>NVIDIA Cosmos</td><td>NVIDIA</td><td>US</td><td><span class="tag orange">Open-weight</span><div class="mini">NVIDIA license</div></td><td>Video / latents</td><td class="mini" style="font-size:13px;color:#404652">Physical-AI platform. Widely called "open-source" but it is open-weight, not OSI</td></tr>
+            <tr data-region="us"><td>V-JEPA 2 / 2.1</td><td>Meta FAIR</td><td>US</td><td><span class="tag green">Open</span><div class="mini">weights + code + data</div></td><td>Latents</td><td class="mini" style="font-size:13px;color:#404652">1.2B params; latent-space prediction; zero-shot robot planning (Jun 2025). 2.1 (Mar 2026) adds dense, temporally consistent features</td></tr>
+            <tr data-region="us"><td>NVIDIA Cosmos 3</td><td>NVIDIA</td><td>US</td><td><span class="tag green">Open</span><div class="mini">OpenMDW-1.1</div></td><td>Video / latents / actions</td><td class="mini" style="font-size:13px;color:#404652">Physical-AI platform. Cosmos 3 (May to Jul 2026) ships code, weights, data and a benchmark under OpenMDW-1.1, a permissive Linux Foundation license still under OSI review. Earlier Cosmos releases used NVIDIA's own model license</td></tr>
             <tr data-region="us"><td>Open-Oasis</td><td>Decart + Etched</td><td>Israel / US</td><td><span class="tag green">Open-source</span><div class="mini">~500M</div></td><td>Video</td><td class="mini" style="font-size:13px;color:#404652">The open sibling of Decart's closed hosted Oasis</td></tr>
             <tr data-region="us"><td>DreamerV3</td><td>Hafner et al. (academic)</td><td>US / Canada</td><td><span class="tag green">Open-source</span></td><td>Latents (RL)</td><td class="mini" style="font-size:13px;color:#404652">The "learn in a dream" reference codebase for model-based RL</td></tr>
           </tbody>
@@ -691,8 +720,8 @@ td:first-child{font-weight:800;color:#111}
       </div>
     </div>
 
-    <div class="note">Geography: China leads the open tier by volume (Tencent, Ant, Skywork). The US contributes the dominant open-weight platform (Cosmos), the latent / JEPA line (Meta), and smaller open releases (Open-Oasis, DreamerV3). Europe is largely absent from the open world-model tier. On licenses: the Tencent models are "open" in Tencent's framing but ship under a Hunyuan community license with restrictions, so treat them as open-with-conditions, not Apache-clean.</div>
-    <div class="warning" style="margin-top:14px"><b>The Baidu question, answered honestly.</b> There is no confirmed Baidu or PaddlePaddle world model. Baidu's open activity is the Ernie large-language-model line, not a world model. It is left off the list rather than guessed at.</div>
+    <div class="note">Geography: China leads the open tier by volume (Tencent, Ant, Skywork). The US contributes the dominant open platform (Cosmos, which moved to a permissive license with Cosmos 3), the latent / JEPA line (Meta), and smaller open releases (Open-Oasis, DreamerV3). Europe is largely absent from the open world-model tier. On licenses: the Tencent models are "open" in Tencent's framing but ship under a Hunyuan community license with restrictions, so treat them as open-with-conditions, not Apache-clean. World Labs' Spark 2.0 (open source, April 2026) is a Gaussian-splat renderer rather than a world model, so it is not in the table.</div>
+    <div class="warning" style="margin-top:14px"><b>The Baidu question, answered honestly.</b> There is no confirmed Baidu or PaddlePaddle world model. Baidu's open activity is the Ernie large-language-model line, not a world model. It is left off the list rather than guessed at. Alibaba is the opposite case: Happy Oyster (April 2026) is a real world model, but a closed early-access product with no public weights, so Alibaba's open contribution here remains the Wan video base.</div>
 
     <p class="countline" style="margin-top:18px">Run it yourself &nbsp;/&nbsp; primary repos</p>
     <div class="source-links">
@@ -702,6 +731,9 @@ td:first-child{font-weight:800;color:#111}
       <a href="https://github.com/robbyant/lingbot-world" target="_blank" rel="noopener">LingBot-World</a>
       <a href="https://huggingface.co/docs/transformers/model_doc/vjepa2" target="_blank" rel="noopener">V-JEPA 2 (HF)</a>
       <a href="https://www.nvidia.com/en-us/ai/cosmos/" target="_blank" rel="noopener">NVIDIA Cosmos</a>
+      <a href="https://github.com/Tencent-Hunyuan/HY-World-2.0" target="_blank" rel="noopener">HY-World 2.0</a>
+      <a href="https://github.com/facebookresearch/vjepa2" target="_blank" rel="noopener">V-JEPA 2 / 2.1 repo</a>
+      <a href="https://huggingface.co/nvidia/Cosmos3-Edge" target="_blank" rel="noopener">Cosmos 3 Edge (HF)</a>
     </div>
   </div>
 </section>
@@ -764,7 +796,7 @@ td:first-child{font-weight:800;color:#111}
     <div class="myth">
       <div class="mythcard">
         <div class="claim"><span class="badge part">Partly true</span><q>Bezos is building world models.</q></div>
-        <div class="fix"><span class="badge">Correction</span><p>Jeff Bezos is building an AI company, Prometheus, and is its co-CEO, but it is an "artificial general engineer" for designing physical products, which he says has nothing to do with robotics or navigable simulation. It is physical AI, adjacent to world models. Where Bezos actually touches a world-model lab, it is as an <b>investor</b>: Bezos Expeditions backed Yann LeCun's AMI Labs. So: builder of a neighboring thing, backer of the real thing, not a builder of world models as usually defined.</p></div>
+        <div class="fix"><span class="badge">Correction</span><p>Jeff Bezos is building an AI company, Prometheus, and is its co-CEO, but it is an "artificial general engineer" for designing physical products, which he says has nothing to do with robotics or navigable simulation. It is physical AI, adjacent to world models. Where Bezos actually touches a world-model lab, it is as an <b>investor</b>: Bezos Expeditions co-led Yann LeCun's AMI Labs seed, and Bezos personally joined General Intuition's $320M Series A in June 2026. So: builder of a neighboring thing, backer of the real thing, not a builder of world models as usually defined.</p></div>
       </div>
     </div>
   </div>
@@ -849,6 +881,7 @@ td:first-child{font-weight:800;color:#111}
       <div class="card"><div class="meta"><span class="tag orange">Power &amp; heat</span></div><h3>Liquid cooling, ~120 kW+</h3><p>A dense AI rack draws well over 100 kW, versus roughly 10&ndash;20 kW for a traditional rack. Air cannot remove that heat, so direct liquid cooling is now standard.</p></div>
       <div class="card"><div class="meta"><span class="tag green">Storage net</span></div><h3>A third network</h3><p>Separate from compute traffic, a storage fabric connects the GPU nodes to the file and object tiers above, sized to sustain the ingest rate without stalling training.</p></div>
     </div>
+    <div class="fieldnote" style="margin-top:22px"><b>Where the rack is heading.</b> The GB200 NVL72 drawn above remains the reference design. Its successors keep the rack-as-one-accelerator idea and raise the power: GB300 NVL72 (Blackwell Ultra, B300) has shipped in volume since mid-2025, and Vera Rubin (Rubin GPUs paired with Vera CPUs) entered production in 2026, with cloud instances expected in the second half. NVIDIA's roadmap moves to 800 VDC power distribution for the Kyber racks planned with Rubin Ultra in 2027. At the other end of the range, NVIDIA says Cosmos 3 Edge, a 4B world-action model, produces robot actions at 15 Hz on Jetson Thor. And the silicon map is widening: AMD's stated reason for buying World Labs is to shape its future hardware and systems roadmaps around workloads like these.</div>
   </div>
 </section>
 
@@ -952,7 +985,7 @@ td:first-child{font-weight:800;color:#111}
     <div class="split">
       <div class="panel">
         <h3>The emerging mechanism</h3>
-        <p>The first real attempts share memory rather than models. In ShareVerse, each agent archives its frames with physical coordinates, and when generating, retrieves other agents' memories of the places along its own path, so two agents conditioned on the same place render the same world, with cross-agent attention resolving conflicts. Xiaomi's driving model does the single-model version: one reconstructed 4D scene acts as shared spatial memory across every camera view.</p>
+        <p>The first real attempts share memory rather than models. In ShareVerse, each agent archives its frames with physical coordinates, and when generating, retrieves other agents' memories of the places along its own path, so two agents conditioned on the same place render the same world, with cross-agent attention resolving conflicts. Xiaomi's driving model does the single-model version: one reconstructed 4D scene acts as shared spatial memory across every camera view. Odyssey's Agora-1 (June 2026) is a commercial lab's first product aimed at the same problem: several agents interacting inside one shared, real-time simulated world, by the company's description.</p>
       </div>
       <div class="panel">
         <h3>The mature analogs, and the open part</h3>
@@ -961,7 +994,7 @@ td:first-child{font-weight:800;color:#111}
     </div>
 
     <h3 style="font-family:var(--serif);font-size:34px;letter-spacing:-.045em;margin:34px 0 6px">The overlay: thinking and dreaming</h3>
-    <p class="mini" style="margin:0 0 16px;font-size:15px;color:#4c5260">The anticipated architecture layers a reasoner over the world model. Worth separating the two words.</p>
+    <p class="mini" style="margin:0 0 16px;font-size:15px;color:#4c5260">The anticipated architecture puts a reasoner on top of the world model. Worth separating the two words.</p>
     <div class="cards">
       <article class="card">
         <div class="meta"><span class="tag green">Dreaming</span></div>
@@ -999,6 +1032,7 @@ td:first-child{font-weight:800;color:#111}
         <div id="evalFails"></div>
       </div>
     </div>
+    <div class="fieldnote" style="margin-top:22px"><b>State of measurement, October 2026.</b> There is still no standardized third-party benchmark that the major labs all report against. Academic suites keep multiplying: WorldScore for world generation, WorldBench and WorldArena for physics and embodied use, 4DWorldBench for 3D and 4D scenes, and in October a measurement-based physics test titled "World Models' Last Exam in Physics." A July 2026 survey still described the evaluation landscape as fragmented. Treat vendor numbers, such as NVIDIA's VANTAGE-Bench ranking for Cosmos 3 Edge or Tencent's comparison of HY-World 2.0 with Marble, as the vendor's position.</div>
   </div>
 </section>
 
@@ -1015,6 +1049,7 @@ td:first-child{font-weight:800;color:#111}
           <li><b>Text.</b> A description of the place. Genie 3 generates an explorable world from a prompt alone.</li>
           <li><b>Images and video.</b> World Labs Marble accepts photos, video, panoramas, or a rough 3D layout and reconstructs a coherent scene.</li>
           <li><b>A live feed.</b> Decart's Mirage transforms streaming video in real time, so the camera itself becomes the prompt.</li>
+          <li><b>A real place.</b> Since May 2026 Project Genie can seed a world from Street View imagery of US locations, so the starting point is a real street rather than a description.</li>
         </ul>
       </div>
       <div class="panel">
@@ -1125,11 +1160,11 @@ td:first-child{font-weight:800;color:#111}
     <div class="tl">
       <div class="tl-row"><div class="tl-year">1990</div><div class="tl-body"><h4>Recurrent world-model controllers in RL <span>&middot; Jürgen Schmidhuber</span></h4><p>The early formulation: a controller learns to act by using a recurrent model that predicts how the environment responds.</p><span class="tl-now">now &middot; KAUST (Saudi Arabia) + IDSIA</span></div></div>
       <div class="tl-row"><div class="tl-year">2018</div><div class="tl-body"><h4>"World Models" <span>&middot; David Ha &amp; Jürgen Schmidhuber</span></h4><p>The paper that named the field: compress the world into a tiny latent, then train a small controller to act inside the "dream." The compression was the point.</p><span class="tl-now">Ha now &middot; co-founder &amp; CEO, Sakana AI (Tokyo)</span></div></div>
-      <div class="tl-row"><div class="tl-year">2019&ndash;23</div><div class="tl-body"><h4>PlaNet &rarr; Dreamer &rarr; DreamerV3 <span>&middot; Danijar Hafner</span></h4><p>The most influential line in model-based reinforcement learning: agents that learn a latent model and plan by imagining in it.</p><span class="tl-now">long at Google DeepMind; 2026 reports of a move to commercialize (unconfirmed)</span></div></div>
+      <div class="tl-row"><div class="tl-year">2019&ndash;25</div><div class="tl-body"><h4>PlaNet &rarr; Dreamer &rarr; DreamerV3 &rarr; Dreamer 4 <span>&middot; Danijar Hafner</span></h4><p>The most influential line in model-based reinforcement learning: agents that learn a latent model and plan by imagining in it. Dreamer 4 learned to mine Minecraft diamonds from recorded gameplay alone, without touching the game.</p><span class="tl-now">left DeepMind Nov 2025; stealth humanoid-robotics startup in San Francisco (MIT Technology Review, Sep 2026; reported name Embo)</span></div></div>
       <div class="tl-row"><div class="tl-year">2020</div><div class="tl-body"><h4>MuZero <span>&middot; Julian Schrittwieser (lead)</span></h4><p>Planning with a <i>learned</i> model, no rules given, mastering Atari, Go, chess and shogi. A world model in the planning sense.</p><span class="tl-now">now &middot; Anthropic</span></div></div>
-      <div class="tl-row"><div class="tl-year">2022</div><div class="tl-body"><h4>"A Path Towards Autonomous Machine Intelligence" <span>&middot; Yann LeCun</span></h4><p>The position paper behind JEPA: predict in an abstract representation, not in pixels. The intellectual root of the latent camp.</p><span class="tl-now">left Meta late 2025; founding AMI Labs (Paris) + NYU</span></div></div>
+      <div class="tl-row"><div class="tl-year">2022</div><div class="tl-body"><h4>"A Path Towards Autonomous Machine Intelligence" <span>&middot; Yann LeCun</span></h4><p>The position paper behind JEPA: predict in an abstract representation, not in pixels. The intellectual root of the latent camp.</p><span class="tl-now">left Meta late 2025; executive chairman, AMI Labs (Paris); NYU</span></div></div>
       <div class="tl-row"><div class="tl-year">2024</div><div class="tl-body"><h4>Sora, "video generation as world simulators" <span>&middot; Tim Brooks &amp; Bill Peebles</span></h4><p>The moment big generative video was reframed as world simulation.</p><span class="tl-now">Brooks: OpenAI &rarr; DeepMind &rarr; Meta Superintelligence Labs; Peebles left OpenAI Apr 2026</span></div></div>
-      <div class="tl-row"><div class="tl-year">2024&ndash;25</div><div class="tl-body"><h4>Genie &rarr; Genie 3; V-JEPA &rarr; V-JEPA 2 <span>&middot; DeepMind; Meta FAIR</span></h4><p>The two frontier lines mature: real-time interactive worlds (Genie) and open latent world models (V-JEPA 2).</p><span class="tl-now">Google DeepMind; Meta</span></div></div>
+      <div class="tl-row"><div class="tl-year">2024&ndash;26</div><div class="tl-body"><h4>Genie &rarr; Genie 3; V-JEPA &rarr; V-JEPA 2.1 <span>&middot; DeepMind; Meta FAIR</span></h4><p>The two frontier lines mature: real-time interactive worlds (Genie, public as Project Genie in 2026) and open latent world models (V-JEPA 2, then 2.1 in March 2026).</p><span class="tl-now">Google DeepMind; Meta</span></div></div>
       <div class="tl-row"><div class="tl-year">2025&ndash;26</div><div class="tl-body"><h4>The open wave <span>&middot; NVIDIA, Tencent, Skywork, Ant</span></h4><p>Cosmos, HunyuanWorld, Matrix-Game and LingBot push open and open-weight world models into the mainstream, most of them Chinese.</p><span class="tl-now">see the open-ecosystem section above</span></div></div>
     </div>
 
@@ -1211,7 +1246,7 @@ td:first-child{font-weight:800;color:#111}
   <div class="wrap">
     <div class="kicker">16 &nbsp;/&nbsp; Provenance</div>
     <h2>Sources &amp; accuracy notes.</h2>
-    <p class="sub">Headline figures here were re-audited against the web on 11 September 2026, and the deeper body was spot-checked in the same pass. Funding and valuation numbers are reported figures, not audited, and some rounds were described as "reported" or "finalizing" at the time of writing. Where a fact could not be confirmed, the page says so rather than guessing.</p>
+    <p class="sub">Headline figures were re-audited against the web on 19 October 2026 for v2.0, building on the 11 September 2026 audit, and the deeper body was spot-checked in the same pass. Funding and valuation numbers are reported figures, not audited, and some rounds were described as "reported" or "finalizing" at the time of writing. Where a fact could not be confirmed, the page says so rather than guessing.</p>
     <div class="sources-grid">
       <a href="https://www.worldlabs.ai/blog/funding-2026" target="_blank" rel="noopener"><b>World Labs</b>$1B funding announcement, Feb 2026</a>
       <a href="https://finance.yahoo.com/news/ai-pioneer-fei-fei-lis-202957884.html" target="_blank" rel="noopener"><b>Reuters</b>World Labs raises $1 billion</a>
@@ -1234,11 +1269,31 @@ td:first-child{font-weight:800;color:#111}
       <a href="https://github.com/SkyworkAI/Matrix-Game" target="_blank" rel="noopener"><b>Skywork AI</b>Matrix-Game 1/2/3 (open-source)</a>
       <a href="https://arxiv.org/abs/2601.20540" target="_blank" rel="noopener"><b>arXiv</b>LingBot-World (Ant Group, Apache 2.0)</a>
       <a href="https://ai.meta.com/blog/v-jepa-2-world-model-benchmarks/" target="_blank" rel="noopener"><b>Meta</b>V-JEPA 2 world model (1.2B, open)</a>
-      <a href="https://arxiv.org/abs/2501.03575" target="_blank" rel="noopener"><b>arXiv</b>Cosmos platform (open-weight, NVIDIA)</a>
+      <a href="https://arxiv.org/abs/2501.03575" target="_blank" rel="noopener"><b>arXiv</b>Cosmos platform, original release (NVIDIA model license)</a>
       <a href="https://readwise-assets.s3.amazonaws.com/media/wisereads/articles/welcome-to-the-era-of-experien/The_Era_of_Experience_Paper.pdf" target="_blank" rel="noopener"><b>Silver &amp; Sutton</b>"Welcome to the Era of Experience" (2025)</a>
       <a href="https://en.wikipedia.org/wiki/Sakana_AI" target="_blank" rel="noopener"><b>Reference</b>David Ha ("World Models") &rarr; Sakana AI</a>
       <a href="https://x.com/Mononofu/status/1850970600455717039" target="_blank" rel="noopener"><b>Source</b>Julian Schrittwieser (MuZero) &rarr; Anthropic</a>
       <a href="https://time.com/7327244/meta-google-ai-researcher-world-models/" target="_blank" rel="noopener"><b>TIME</b>Tim Brooks (Sora) &rarr; Meta, on world models</a>
+      <a href="https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute" target="_blank" rel="noopener"><b>AMD</b>Agreement to acquire World Labs, ~$8.2B, Sep 2026</a>
+      <a href="https://letsdatascience.com/news/amazon-in-talks-to-acquire-decart-for-around-7-billion-e3e3c9e2" target="_blank" rel="noopener"><b>WSJ via coverage</b>Amazon in talks for Decart, ~$7B, Oct 2026</a>
+      <a href="https://www.nst.com.my/amp/business/corporate/2026/09/1528084/anthropic-drops-pursuit-ai-startup-decart" target="_blank" rel="noopener"><b>Reuters</b>Anthropic drops Decart pursuit, Sep 2026</a>
+      <a href="https://techcrunch.com/2025/10/16/general-intuition-lands-134m-seed-to-teach-agents-spatial-reasoning-using-video-game-clips/" target="_blank" rel="noopener"><b>TechCrunch</b>General Intuition $133.7M seed, Oct 2025</a>
+      <a href="https://app.dealroom.co/news/note/general-intuition-raises-320m-series-a-at-2-3b-valuation" target="_blank" rel="noopener"><b>Dealroom</b>General Intuition $320M Series A at $2.3B</a>
+      <a href="https://hedgeco.net/news/?p=92093" target="_blank" rel="noopener"><b>HedgeCo / SiliconANGLE</b>General Intuition $220M at $6.2B, Sep 2026</a>
+      <a href="https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/" target="_blank" rel="noopener"><b>TechCrunch</b>Odyssey $310M Series B at $1.45B</a>
+      <a href="https://runway.com/news/runway-series-e-funding" target="_blank" rel="noopener"><b>Runway</b>$315M Series E announcement</a>
+      <a href="https://www.geekwire.com/2026/bezos-ai-startup-prometheus-raises-12b-at-41b-valuation-and-the-ceos-explain-what-theyre-doing/" target="_blank" rel="noopener"><b>GeekWire</b>Prometheus $12B at $41B, Jun 2026</a>
+      <a href="https://techcrunch.com/2026/03/09/yann-lecuns-ami-labs-raises-1-03-billion-to-build-world-models/" target="_blank" rel="noopener"><b>TechCrunch</b>AMI Labs seed and leadership</a>
+      <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/?amp=" target="_blank" rel="noopener"><b>Google</b>Project Genie global rollout + Street View, May 2026</a>
+      <a href="https://arstechnica.com/google/2026/02/waymo-leverages-genie-3-to-create-a-world-model-for-self-driving-cars/" target="_blank" rel="noopener"><b>Ars Technica</b>Waymo World Model built on Genie 3</a>
+      <a href="https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf" target="_blank" rel="noopener"><b>NVIDIA</b>Cosmos 3 technical report (Edge, Nano, Super)</a>
+      <a href="https://huggingface.co/nvidia/Cosmos3-Edge" target="_blank" rel="noopener"><b>Hugging Face</b>Cosmos3-Edge model card (OpenMDW-1.1)</a>
+      <a href="https://lwn.net/Articles/1089251/" target="_blank" rel="noopener"><b>LWN</b>Considering the OpenMDW license (OSI review)</a>
+      <a href="https://github.com/Tencent-Hunyuan/HY-World-2.0" target="_blank" rel="noopener"><b>Tencent</b>HY-World 2.0 repo and report</a>
+      <a href="https://github.com/facebookresearch/vjepa2" target="_blank" rel="noopener"><b>Meta FAIR</b>V-JEPA 2 and 2.1 codebase</a>
+      <a href="https://www.scmp.com/tech/big-tech/article/3350351/chinese-tech-giants-ai-godmother-li-fei-fei-race-seize-edge-world-models" target="_blank" rel="noopener"><b>SCMP</b>Alibaba Happy Oyster; World Labs Spark 2.0</a>
+      <a href="https://arxiv.org/pdf/2607.06401" target="_blank" rel="noopener"><b>arXiv</b>A Definition and Roadmap for World Models (evaluation survey)</a>
+      <a href="https://www.technologyreview.com/2026/09/08/1142088/danijar-hafner-developing-plan-ahead-agents/amp/" target="_blank" rel="noopener"><b>MIT Tech Review</b>Danijar Hafner's stealth startup</a>
     </div>
     <div class="warning" style="margin-top:22px">Infrastructure sections (storage, GPU/CPU, memory hierarchy, racks) describe widely documented industry practice and NVIDIA's published GB200 NVL72 architecture. Specific per-rack power and latency figures are typical ranges, not a spec sheet for any one deployment.</div>
   </div>
@@ -1246,7 +1301,8 @@ td:first-child{font-weight:800;color:#111}
 
 <footer class="footer">
   <div class="wrap">
-    World Models &middot; an interactive field guide. Built as a single self-contained page, publishable on GitHub Pages. Facts last audited 11 September 2026; this is a fast-moving field, so treat figures as of that date. Fonts: Source Serif 4, Inter, JetBrains Mono.
+    World Models &middot; an interactive field guide. Built as a single self-contained page, publishable on GitHub Pages. Facts last audited 19 October 2026; this is a fast-moving field, so treat figures as of that date. Fonts: Source Serif 4, Inter, JetBrains Mono.
+    <p class="verstamp">World Models — v2.0 · build 2026-10-19T00:31-04:00 · supersedes v1.0 (the unversioned page audited 11 September 2026). Changes in v2: AMD's pending acquisition of World Labs and Amazon's reported talks for Decart; General Intuition corrected (seed dated Oct 2025, founders named) and its Series A and $6.2B round added; Odyssey added; Runway, Prometheus, and Cosmos 3 figures and dates corrected; Cosmos 3 license updated to OpenMDW-1.1; Project Genie global rollout and Street View grounding; AMI Labs leadership and status; V-JEPA 2.1 and Dreamer 4; Hafner's move; new notes on evaluation, rack roadmap, and the 2026 deal pattern; avoid-list wording fixed.</p>
   </div>
 </footer>
 
@@ -1266,14 +1322,15 @@ td:first-child{font-weight:800;color:#111}
 
 /* ---------- builders table ---------- */
 var LABS = [
-  {name:"World Labs / Marble", lead:"Fei-Fei Li & Justin Johnson", hq:"San Francisco", focus:"Spatial intelligence; navigable 3D worlds", raised:1230, rDisp:"~$1.23B total", round:"$1B, Feb 2026 (~$5.4B val)", type:"startup", access:"closed"},
-  {name:"AMI Labs", lead:"Yann LeCun", hq:"Paris", focus:"JEPA world models for robotics & autonomy", raised:1030, rDisp:"~$1.03B", round:"$1.03B seed, Mar 2026 (~$3.5B val)", type:"startup", access:"closed"},
-  {name:"Decart / Oasis, Mirage, Lucy", lead:"Dean Leitersdorf & Moshe Shalev", hq:"Tel Aviv", focus:"Real-time video worlds (open sibling: Open-Oasis)", raised:450, rDisp:"~$450M+", round:"$300M, May 2026 (~$4B val)", type:"startup", access:"closed"},
-  {name:"Runway", lead:"Cristóbal Valenzuela", hq:"New York", focus:"Video models pivoting to world models", raised:315, rDisp:"$315M (round)", round:"$315M Series E, Feb 2026 (~$5.3B val)", type:"startup", access:"closed"},
-  {name:"General Intuition", lead:"— (not disclosed)", hq:"New York", focus:"World models trained on game video", raised:134, rDisp:"$133.7M", round:"$133.7M seed, Jan 2026", type:"startup", access:"closed"},
-  {name:"NVIDIA Cosmos", lead:"NVIDIA (Jensen Huang)", hq:"Santa Clara", focus:"World foundation models for physical AI", raised:0, rDisp:"n/a (platform)", round:"Cosmos 3, May 2026", type:"platform", access:"open-weight"},
-  {name:"DeepMind / Genie 3", lead:"Google DeepMind (Demis Hassabis)", hq:"London", focus:"Real-time interactive worlds, 720p/24fps", raised:0, rDisp:"n/a (Alphabet)", round:"Research preview; Project Genie demo", type:"platform", access:"closed"},
-  {name:"Prometheus", lead:"Jeff Bezos & Vik Bajaj", hq:"San Francisco", focus:"Artificial general engineer (physical AI) — adjacent", raised:16000, rDisp:"$16B+", round:"~$10–12B, 2026 (~$38–41B val)", type:"adjacent", access:"closed"}
+  {name:"World Labs / Marble, Atlas", lead:"Fei-Fei Li, Justin Johnson, Ben Mildenhall, Christoph Lassner", hq:"San Francisco", focus:"Spatial intelligence; navigable 3D worlds", raised:1230, rDisp:"~$1.23B total", round:"AMD to acquire, ~$8.2B all-stock (Sep 2026, pending); $1B round Feb 2026 (reported ~$5B to $5.4B val)", type:"pending", access:"closed"},
+  {name:"AMI Labs", lead:"Yann LeCun (exec. chair), Alexandre LeBrun (CEO)", hq:"Paris", focus:"JEPA world models for robotics and industry; no public model yet", raised:1030, rDisp:"~$1.03B", round:"$1.03B seed, Mar 2026 (~$3.5B pre-money)", type:"startup", access:"closed"},
+  {name:"Runway / GWM-1", lead:"Cristóbal Valenzuela", hq:"New York", focus:"Video models plus GWM-1 world models (Worlds, Robotics, Avatars)", raised:860, rDisp:"~$860M total (reported)", round:"$315M Series E, Feb 2026 (~$5.3B val)", type:"startup", access:"closed"},
+  {name:"General Intuition", lead:"Pim de Witte (CEO), Eloi Alonso, Adam Jelley, Vincent Micheli", hq:"New York", focus:"Agents trained in world models built from game video", raised:674, rDisp:"~$674M (3 rounds)", round:"$220M, Sep 2026 (~$6.2B val); $320M Series A, Jun 2026 ($2.3B); $133.7M seed, Oct 2025", type:"startup", access:"closed"},
+  {name:"Decart / Oasis, Mirage, Lucy", lead:"Dean Leitersdorf & Moshe Shalev", hq:"Tel Aviv", focus:"Real-time video worlds (open sibling: Open-Oasis)", raised:450, rDisp:"~$450M+", round:"$300M, May 2026 (~$4B val); Amazon talks reported at ~$7B, Oct 2026", type:"startup", access:"closed"},
+  {name:"Odyssey", lead:"Oliver Cameron & Jeff Hawke", hq:"Palo Alto", focus:"General world models; Agora-1 shared multi-agent worlds", raised:337, rDisp:"~$337M", round:"$310M Series B, Jun 2026 (~$1.45B val)", type:"startup", access:"closed"},
+  {name:"NVIDIA Cosmos", lead:"NVIDIA (Jensen Huang)", hq:"Santa Clara", focus:"World foundation models for physical AI", raised:0, rDisp:"n/a (platform)", round:"Cosmos 3: Super and Nano May 2026; Edge Jul 2026", type:"platform", access:"open-mdw"},
+  {name:"DeepMind / Genie 3", lead:"Google DeepMind (Demis Hassabis)", hq:"London", focus:"Real-time interactive worlds, 720p/24fps", raised:0, rDisp:"n/a (Alphabet)", round:"Research preview; Project Genie for AI Ultra subscribers globally since May 2026", type:"platform", access:"closed"},
+  {name:"Prometheus", lead:"Jeff Bezos & Vik Bajaj", hq:"San Francisco", focus:"Artificial general engineer (physical AI), adjacent", raised:18000, rDisp:"$18B+", round:"$12B Series B, Jun 2026 (~$41B val)", type:"adjacent", access:"closed"}
 ];
 var SCALE_MAX = 1300;
 var sortKey = "raised", sortDir = -1;
@@ -1281,11 +1338,13 @@ var sortKey = "raised", sortDir = -1;
 function typeTag(t){
   if(t==="startup") return '<span class="tag green">Startup</span>';
   if(t==="platform") return '<span class="tag orange">Platform</span>';
+  if(t==="pending") return '<span class="tag blue">Acquisition pending</span>';
   return '<span class="tag red">Adjacent</span>';
 }
 function accessTag(a){
   if(a==="open-source") return '<span class="tag green">Open-source</span>';
   if(a==="open-weight") return '<span class="tag orange">Open-weight</span>';
+  if(a==="open-mdw") return '<span class="tag green">Open (OpenMDW)</span>';
   return '<span class="tag red">Closed</span>';
 }
 function bar(v){
@@ -1524,28 +1583,28 @@ const families = [
     title:"Generative interactive worlds",
     sub:"render a playable environment you can walk through",
     body:"These generate photoreal, navigable environments in real time. You give a prompt, you get a world, and you move through it while the model draws each next frame consistently with everything you have already seen. The defining feature is real-time interactivity plus short-term memory of the scene.",
-    kv:[["Flagship","DeepMind Genie 3 · Project Genie"],["Output","live 720p video, ~24 fps, minutes of consistency"],["Method","autoregressive frame generation conditioned on your trajectory"],["Uses","agent training curricula, prototyping, interactive media"]]
+    kv:[["Flagship","DeepMind Genie 3 · Project Genie; also Decart Oasis, Odyssey, Runway GWM-Worlds"],["Output","live 720p video, ~24 fps, minutes of consistency"],["Method","autoregressive frame generation conditioned on your trajectory"],["Uses","agent training curricula, prototyping, interactive media"]]
   },
   {
     letter:"P", color:"var(--forest)", key:"physical",
     title:"World foundation models for physical AI",
     sub:"physics-grounded simulators for robots and vehicles",
     body:"General-purpose, fine-tunable models that generate physically plausible video and predict actions, built to produce synthetic training data and to serve as a simulator-in-the-loop for robots and autonomous vehicles. Post-trained into task-specific world models, and increasingly into world-action models that output control, not just pixels.",
-    kv:[["Flagship","NVIDIA Cosmos 3 (Super and Nano available; Edge coming soon)"],["Output","physics-accurate video, actions, synthetic sensor data"],["Method","mixture-of-transformers over vision, world, action"],["Uses","robotics and AV training, closed-loop policy evaluation"]]
+    kv:[["Flagship","NVIDIA Cosmos 3: Super 64B and Nano 16B (May 2026), Edge 4B (Jul 2026)"],["Output","physics-accurate video, actions, synthetic sensor data"],["Method","mixture-of-transformers over vision, world, action"],["Uses","robotics and AV training, closed-loop policy evaluation"]]
   },
   {
     letter:"S", color:"var(--purple)", key:"spatial",
     title:"Spatial / large world models",
     sub:"generate persistent, explorable 3D scenes",
     body:"Sometimes called Large World Models. They take a single image, text, or sketch and build a full, persistent, geometry-consistent 3D scene you can move around in and export. The emphasis is spatial intelligence: understanding depth, geometry, and how objects occupy space, rather than frame-by-frame video.",
-    kv:[["Flagship","World Labs · Marble (Fei-Fei Li)"],["Output","persistent 3D scenes, exportable as mesh / splats"],["Method","3D scene generation with an AI-native hybrid editor (Chisel)"],["Uses","VFX, gaming, design, robotics scene priors"]]
+    kv:[["Flagship","World Labs · Marble, Atlas (Fei-Fei Li; AMD deal pending); Tencent HY-World 2.0 (open)"],["Output","persistent 3D scenes, exportable as mesh / splats"],["Method","3D scene generation with an AI-native hybrid editor (Chisel)"],["Uses","VFX, gaming, design, robotics scene priors"]]
   },
   {
     letter:"J", color:"var(--orange)", key:"jepa",
     title:"Non-generative JEPA planners",
     sub:"predict in abstract space, never render a pixel",
     body:"The contrarian camp, led by Yann LeCun. Instead of generating the future, these learn to predict an abstract representation of it, ignoring unpredictable surface detail. The claim is that this yields real physical common sense and planning at a fraction of the compute, because the model never wastes effort drawing pixels it does not need. This is the sharp line inside the latent family: Dreamer keeps a decoder and reconstructs images while training, so it can draw; JEPA drops reconstruction entirely, so there is genuinely nothing to watch. Its output feeds planning and control, not a screen.",
-    kv:[["Flagship","AMI Labs · V-JEPA line (LeCun)"],["Output","latent predictions, plans, control (no visuals)"],["Method","Joint Embedding Predictive Architecture in latent space"],["Uses","robot planning, industrial sensor modeling, healthcare"]]
+    kv:[["Flagship","Meta FAIR V-JEPA 2 / 2.1 (open); AMI Labs (LeCun), no public model yet"],["Output","latent predictions, plans, control (no visuals)"],["Method","Joint Embedding Predictive Architecture in latent space"],["Uses","robot planning, industrial sensor modeling, healthcare"]]
   }
 ];
 
@@ -1590,7 +1649,7 @@ const archetypes=[
   predicts:"The next observation (the next video frame)",
   emits:"Rendered, navigable video you look at",
   note:"Heavy on the decoder: most compute goes into drawing each frame. Planning is light because you are the planner."},
- {name:"Latent planner (JEPA)", eg:"e.g. AMI Labs V-JEPA", active:[1,2,3,4,5,6], decoder:false,
+ {name:"Latent planner (JEPA)", eg:"e.g. Meta V-JEPA 2", active:[1,2,3,4,5,6], decoder:false,
   stores:"An abstract latent representation of the scene",
   predicts:"The next latent state, not pixels",
   emits:"A plan or action, never an image",
@@ -1703,7 +1762,9 @@ const glossary = [
   ["Working set","The subset of data actively in use right now. When it exceeds HBM, everything gets harder."],
   ["Synthetic data","Model-generated training data. A primary use of physical-AI world models: manufacture scenarios cheaply and safely."],
   ["Gaussian splatting","A 3D scene representation of many small blobs; a common export format for spatial world models."],
-  ["Mixture-of-transformers","An architecture combining specialized transformer components, used in Cosmos 3 across vision, world, and action."]
+  ["Mixture-of-transformers","An architecture combining specialized transformer components, used in Cosmos 3 across vision, world, and action."],
+  ["OpenMDW","Open Model, Data and Weights license from the Linux Foundation: one permissive, MIT-like grant covering weights, data, code, and documentation. Cosmos 3 ships under OpenMDW-1.1, submitted to the OSI in August 2026 and not yet approved."],
+  ["Street View grounding","Seeding a generated world from real panoramic imagery of a place. Project Genie has offered it for US locations since May 2026."]
 ];
 
 // glossary
@@ -1718,10 +1779,15 @@ document.getElementById('gsearch').addEventListener('input',e=>{
 });
 
 const keyclaimsData=[
- ["Genie 3","Real-time interactive world model, 720p / 24fps, minutes of consistency.","Google DeepMind, Aug 2025; Project Genie opened to US subscribers Jan 2026"],
+ ["Genie 3","Real-time interactive world model, 720p / 24fps, minutes of consistency.","Google DeepMind, Aug 2025; Project Genie to US Ultra subscribers Jan 2026, global Ultra rollout with Street View grounding May 2026"],
  ["NVIDIA Cosmos (original)","World foundation model platform for physical AI.","NVIDIA, announced at CES Jan 2025"],
- ["NVIDIA Cosmos 3","Open omnimodel; Super and Nano available, Edge described as coming soon.","NVIDIA newsroom, Jun 2026 (vendor)"],
+ ["NVIDIA Cosmos 3","Open omni-model family: Super (64B) and Nano (16B) released 31 May 2026, Edge (4B) on 20 Jul 2026; code, weights, and data under OpenMDW-1.1.","NVIDIA technical report and Hugging Face model card (vendor)"],
  ["World Labs Marble","Commercial Large World Model generating 3D scenes.","World Labs, Nov 2025; new $1B raise announced Feb 2026"],
+ ["AMD to acquire World Labs","Definitive agreement, all-stock, ~$8.2B; close expected by end of 2026; Li to become AMD chief scientist.","AMD press release, 28 Sep 2026"],
+ ["Decart takeover interest","Anthropic explored ~$6B and walked away; Amazon reported in talks at ~$7B.","Bloomberg via Reuters, Sep 2026; WSJ via DPA, Oct 2026 (reported, unconfirmed)"],
+ ["General Intuition","$220M at ~$6.2B, after a $320M Series A at $2.3B (Jun 2026) and a $133.7M seed (Oct 2025).","SiliconANGLE, 29 Sep 2026; TechCrunch (reported)"],
+ ["Odyssey","$310M Series B at ~$1.45B; AWS as preferred cloud, Trainium optimization.","Company release / TechCrunch, 17 Jun 2026"],
+ ["Prometheus","$12B Series B at ~$41B, $18B+ total; an \"artificial general engineer,\" not robotics.","CNBC / GeekWire, 11 Jun 2026"],
  ["AMI Labs","JEPA world-model startup; ~$1.03B seed at a $3.5B pre-money valuation.","Reuters / TechCrunch, Mar 2026; LeCun left Meta Nov 2025"],
  ["GB200 NVL72 rack","18 compute trays (4 GPUs each) + 9 NVLink switch trays, ~120 kW, liquid-cooled.","NVIDIA DGX GB200 / Grace-Blackwell documentation"]
 ];
